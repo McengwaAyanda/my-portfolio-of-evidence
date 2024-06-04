@@ -68,21 +68,21 @@ body {
     flex-basis: 50%;
     width: 90%;
     margin-left: 40px;
-    font-size: 30px;
+    font-size: 24px;
 }
 .about-col-2 h1,  h3{
   color: #e4a022;
 }
 .about-col-2 p{
-  width: 80%;
+  width: 90%;
   text-align: center;
-  margin-left: 10%;
+  margin: 5px 5%;
 }
 
 .skills{
-    width: 90%;
+    width: 85%;
     height: 50%;
-    margin: 5rem;
+    margin: 3rem 5rem;
     color: #e4a022;
     padding: 5%;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -93,8 +93,8 @@ body {
 .skills img{
     margin: 20px 20px;
     padding: 1.5rem;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     justify-content: space-evenly;
     
   }
