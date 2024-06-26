@@ -2,44 +2,193 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Home</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <h1>My Portfolio</h1>
-                
-            </div>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="project.html">Project</a>
-            <a href="contact.html">Contact</a> 
-        </nav> 
+    <nav class="navbar">
+        <div class="logo">
+            <h1>My Portfolio</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav> 
     </header>
-    <section class="home">
-        <div class="home-content">
-            <div class="image"><img src="/images/AyandaMcengwa.jpg" alt="">
-            <h1>Hi I'm Ayanda Mcengwa</h1>
-            <h3>Software Developer/IT Technician</h3>
-            <p>I'm Ayanda Mcengwa, a dedicated Software Developer and IT Technician with a passion for leveraging technology to drive innovation and solve complex problems. With a keen eye for detail and a commitment to continuous learning, I strive to create solutions that not only meet the needs of today but also anticipate the challenges of tomorrow.
-                Through hands-on projects and collaborative endeavors.</p>
-            <div class="btn-box">
-                <a href="/AyandaMcengwa-cv.pdf">Download cv</a>
-                <a href="Contact.html">lets talk</a>
-            </div>
-            <div class="home-sci">
-                <a href="https://www.facebook.com/login.php/"><i class='bx bxl-facebook'></i></a>
-                <a href="https://twitter.com/?lang=en-za"><i class='bx bxl-twitter'></i></a>
-                <a href="https://www.instagram.com/?hl=en"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/McengwaAyanda"><i class='bx bxl-github'></i></a>
+    <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="/images/AyandaMcengwa.jpg" alt=""/>
+                        <h1>Hi I'm Ayanda Mcengwa</h1>
+                        <h3>Software Developer/IT Technician</h3>
+                        <div class="about-col-2" >
+                            <p>I'm Ayanda Mcengwa, a dedicated Software Developer and IT Technician with a passion for leveraging technology to drive innovation and solve complex problems. With a keen eye for detail and a commitment to continuous learning, I strive to create solutions that not only meet the needs of today but also anticipate the challenges of tomorrow.
+                                Through hands-on projects and collaborative endeavors.</p>
+                         </div>
+                        <div class="home-sci">
+                            <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://github.com/McengwaAyanda"><i class='bx bxl-github'></i></a>
+                        </div>
+                        <div class="btn-box">
+                            <a href="/AyandaMcengwa-cv.pdf">Download cv</a>
+                            <a href="Contact.html">lets talk</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
+    <div class="skills">
+        <h1>My Skills</h1>
+       <img src="/images/html.png" alt="HTML"/>
+       <img src="/images/CSS-logo.png" alt="CSS"/>
+       <img src="/images/java-script.png" alt="JS"/>
+       <img src="/images/python.png" alt="Python"/>
+       <br>
+       <br>
+       <img src="/images/java.png" alt="java"/>
+       <img src="/images/icons8-nodejs-48.png" alt="Node-js"/>
+       <img src="/images/reactJs-icon.png" alt="reactJs-icon"/>
+       <img src="/images/mongodb-icon.png" alt="mongodb-icon"/>
+    </div>
+    </section>
+
+    <section id="project">
+        <div class="wrapper">
+            <h2>My Projects</h2><br>
+            <div class="card">
+                <img src="/images/SneakyKleenz-snapshot.png", alt="SneakyKleenz link to website"/>
+                <div class="info">
+                    <h1>SneakyKleenz</h1>
+                    <p>Big, tall mountains look really cool and make nature super awesome!</p>
+                    <button><a href="https://sneakykleenz.netlify.app/">Visit page</a></button>
+                </div>
+            </div>
+      
+            <br>
+            <br>
+      
+            <div class="card">
+                <img src="/images/BuzzChatApp-snapshot.png" alt="Buzz-Chat-App "/>
+                <div class="info">
+                    <h1>Buzz-Chat-App</h1>
+                    <p>Roads pave the way for journeys, connecting destinations and weaving the fabric of travel.</p>
+                    <button><a href="https://buzzchatapp.onrender.com/">Visit page</a></button>
+                </div>
+            </div>
+      
+            <br>
+            <br>
+      
+            <div class="card">
+                <img src="/images/Fashion-set-website.png"/>
+                <div class="info">
+                    <h1>Fashion-set</h1>
+                    <p>Protesters voice their concerns, demanding change and standing up for what they believe is right.</p>
+                    <button><a href="https://f-s-g.netlify.app/">Visit page</a></button>
+                </div>
+            </div>
+      
+            <br>
+            <br>
+      
+            <div class="card">
+              <img src="/images/Fashion-set-website.png"/>
+              <div class="info">
+                  <h1>Drum-Beats-Audio</h1>
+                  <p>Protesters voice their concerns, demanding change and standing up for what they believe is right.</p>
+                  <button>Visit page</button>
+              </div>
+          </div>
         </div>
+      
+        <br>
+        <br>
+    </section>
+    <section id="education">
+        <div class="timeline-container">
+            <h1>Educational Background</h1>
+            <div class="timeline-item">
+              <div class="timeline-date">2020 Jan - 2024 Dec</div>
+              <div class="timeline-content">
+                <h3>Diploma in Information technology</h3>
+                <p>Currently enrolled in my diploma at Cape Peninsula University of Technology</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2018  Jan - 2018 Dec</div>
+              <div class="timeline-content">
+                <h3>Higher Certificate in Information Technology</h3>
+                <p>Completed my HC at  Cape Peninsula University of Technology majoring in Applications Development.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2017  Jan - 2017 Dec</div>
+              <div class="timeline-content">
+                <h3>Matric</h3>
+                <p>Attended at Qokolweni Senior Secondary School, where I developed a strong foundation in math and science.</p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="contact">
+        <div class="form-card2">
+            <form class="form">
+              <h1 class="form-heading">Get In Touch</h1>
+        
+              <div class="form-field">
+                <input 
+                  required="" 
+                  placeholder="Name" 
+                  class="input-field" 
+                  type="text" />
+              </div>
+        
+              <div class="form-field">
+                <input
+                  required=""
+                  placeholder="Email"
+                  class="input-field"
+                  type="email"
+                />
+              </div>
+        
+              <div class="form-field">
+                <input
+                  required=""
+                  placeholder="Subject"
+                  class="input-field"
+                  type="text"
+                />
+              </div>
+        
+              <div class="form-field">
+                <textarea
+                  required=""
+                  placeholder="Message"
+                  cols="30"
+                  rows="3"
+                  class="input-field"
+                ></textarea>
+              </div>
+        
+              <button class="sendMessage-btn">Send Message</button>
+            </form>
+          </div>
     </section>
 
 </body>
