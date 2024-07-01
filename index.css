@@ -4,21 +4,20 @@
 }
 
 #navbar {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 95%;
+  position: absolute;
+  top: 10px;
+  width: 90%;
   display: flex;
   justify-content: space-between;
-  border: 2px solid #71726e;
   border-radius: 5px;
   align-items: center;
   padding: 20px;
-  margin-left: -20px;
+  margin: 10px;
   background-color: rgb(255, 234, 164);
   color: #333;
-  box-shadow: 0 2px 4px rgb(255, 234, 164);
+  box-shadow: 0 2px 4px #333;
   z-index: 100;
+  animation: fadeIn .5s ease-in forwards;
 }
 
 #navbar a {
@@ -33,11 +32,12 @@
 
 #navbar a:hover {
   background-color: #71726e;
-  color: #333;
+  color: rgb(255, 234, 164);
 }
 
 .logo h1 {
   margin: 0;
+  color: black;
 }
 
 .nav-menu {
@@ -68,12 +68,12 @@
 @media (max-width: 768px) {
   .nav-menu {
     position: absolute;
-    left: 95%;
+    left: -90%;
     top: 70px;
     gap: 0;
     flex-direction: column;
     background-color: transparent;
-    width: 98%;
+    width: 95%;
     border-radius: 5px;
     text-align: center;
     transition: 0.3s;
@@ -107,18 +107,17 @@
 }
 
 .container {
-  display: block;
+  display: flex;
   margin-top: 15rem;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  opacity: 0;
+  width: 90%;
   transform: translateY(50px);
-  animation: ItemfadeIn 3s ease-in forwards;
+  animation: fadeIn .5s ease-in forwards;
 }
 
 .row {
-  display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -130,7 +129,7 @@
   text-align: center;
   opacity: 0;
   transform: translateX(-50px);
-  animation: itemFadeIn 0.5s ease forwards;
+  animation: fadeIn .5s ease-in forwards;
 }
 
 .about-col-1 img {
@@ -144,18 +143,21 @@
   flex: 0 0 50%;
   padding: 20px;
   opacity: 0;
-  width: 100%;
+  width: 95%;
   transform: translateX(50px);
-  animation: itemFadeIn 0.5s ease forwards;
+  animation: fadeIn .5s ease-in forwards;
+  text-align: center;
 }
 .about-col-2 p {
-  width: 100%;
+  width: 90%;
 }
 
 .home-sci {
-  display: flex;
+  display: block;
   justify-content: center;
   margin-top: 20px;
+  text-align: center;
+  animation: fadeIn .5s ease-in forwards;
 }
 
 .home-sci a {
@@ -169,15 +171,11 @@
   justify-content: center;
 }
 
-.home-sci a:hover {
-  color: #333;
-  
-}
-
 .btn-box {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  animation: fadeIn .5s ease-in forwards;
 }
 
 .btn-box a {
@@ -221,7 +219,7 @@
 
 /* About Section  */
 #about {
-  width: 95%;
+  width: 90%;
   text-align: center;
   margin-left: 3%;
   margin-top: 3%;
@@ -232,7 +230,7 @@
 }
 
 #skills {
-  width: 95%;
+  width: 90%;
   text-align: center;
   margin: 3%;
   animation: fadeIn .5s ease-in forwards;
@@ -244,4 +242,105 @@
   width: 250px;
   height: 200px;
   justify-content: space-between;
+}
+#project {
+  background-color: transparent;
+  text-align: center;
+  width: 99%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+#project h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 95%;
+}
+
+.card {
+  width: 90%;
+  height: 360px;
+  border: solid 3px #272727;
+  border-radius: 19px;
+  padding: 1.5rem;
+  background: rgb(255, 234, 164);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.card .info {
+  position: relative;
+  z-index: 1;
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s;
+}
+
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card .info h1 {
+  margin: 0;
+}
+
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.card .info button {
+  padding: 0.6rem 1.2rem;
+  background: white;
+  border: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.card .info button:hover {
+  background: dodgerblue;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    width: 30%;
+  }
 }
