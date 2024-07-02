@@ -1,6 +1,7 @@
 * {
   background-color: rgb(255, 234, 164);
   font-family: "Space Mono", monospace;
+  scroll-behavior: smooth;
 }
 
 #navbar {
@@ -107,7 +108,7 @@
 }
 
 .container {
-  display: flex;
+  display:block;
   margin-top: 15rem;
   justify-content: center;
   align-items: center;
@@ -124,7 +125,6 @@
 }
 
 .about-col-1 {
-  flex: 0 0 50%;
   padding: 20px;
   text-align: center;
   opacity: 0;
@@ -136,11 +136,10 @@
   max-width: 300px;
   border-radius: 50%;
   margin-bottom: 20px;
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 
 .about-col-2 {
-  flex: 0 0 50%;
   padding: 20px;
   opacity: 0;
   width: 95%;
@@ -236,7 +235,7 @@
   animation: fadeIn .5s ease-in forwards;
   padding: 5px;
   border-radius: 10px;
-  box-shadow: 2px 2px 2px 2px;
+  /* box-shadow: 2px 2px 2px 2px; */
 }
 #skills img{
   width: 250px;
@@ -273,7 +272,7 @@
   border: solid 3px #272727;
   border-radius: 19px;
   padding: 1.5rem;
-  background: rgb(255, 234, 164);
+  background-color: transparent;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -297,7 +296,8 @@
 .card .info {
   position: relative;
   z-index: 1;
-  color: white;
+  color: #333;
+  background-color: rgb(255, 234, 164);;
   opacity: 0;
   transform: translateY(20px);
   transition: 0.5s;
@@ -310,27 +310,31 @@
 
 .card .info h1 {
   margin: 0;
+  color: #333;
 }
 
 .card .info p {
   letter-spacing: 1px;
   font-size: 15px;
   margin-top: 8px;
+  color: #333;
 }
 
 .card .info button {
   padding: 0.6rem 1.2rem;
-  background: white;
+  background: transparent;
+  margin-bottom: 5px;
   border: none;
-  color: black;
+  color: #333;
   font-weight: bold;
   cursor: pointer;
   transition: 0.4s ease;
+  border-radius: 5px;
 }
 
 .card .info button:hover {
-  background: dodgerblue;
-  color: white;
+  background: #333;
+  color: rgb(255, 234, 164);
 }
 
 @media (min-width: 768px) {
