@@ -16,3 +16,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // adding functionality on the timeline
+  const timelineItems = document.querySelectorAll('.timeline-item');
+
+  window.addEventListener('scroll', () => {
+    const triggerBottom = window.innerHeight / 5 * 4;
+    timelineItems.forEach(item => {
+      const itemTop = item.getBoundingClientRect().top;
+      if (itemTop < triggerBottom) {
+        item.classList.add('active');
+      } else {
+        item.classList.remove('active');
+      }
+    });
+  });
