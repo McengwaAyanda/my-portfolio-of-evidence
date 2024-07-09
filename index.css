@@ -153,6 +153,7 @@
   margin-top: 7%;
   position: relative;
   z-index: 2;
+  margin-left: 10px;
 }
 
 .about-col-2 p {
@@ -532,7 +533,7 @@
   background-color: transparent;
   padding: 20px;
   border-radius:8px;
-  width: 90%;
+  width: 85%;
   margin: 10px;
 }
 .form-card2 .sendMessage-btn {
@@ -590,8 +591,8 @@
 .scroll-to-top {
   display: none;
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 3px;
+  bottom: 5px;
   width: 40px;
   height: 40px;
   background-color: transparent;
