@@ -155,11 +155,26 @@
   z-index: 2;
   margin-left: 10px;
 }
+.about-col-2 h1{
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+
+}
+.about-col-2 h3{
+  font-size: 36px;
+
+  margin: 0;
+  padding: 0;
+}
 
 .about-col-2 p {
   width: 100%;
   border-radius: 10px;
   font-size: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 .btn-box a{
@@ -198,7 +213,7 @@
   }
 
   .about-col-1 img {
-    margin-top: 4rem;
+    margin: 4rem;
   }
 
   .about-col-2 {
