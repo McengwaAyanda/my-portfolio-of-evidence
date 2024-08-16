@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <title>Home</title>
 </head>
 <body>
@@ -51,19 +53,31 @@
             </div>
         </div>
         
-     <div id="skills">
-        <h1>My Skills</h1>
-       <img src="/images/html.png" alt="HTML"/>
-       <img src="/images/CSS-logo.png" alt="CSS"/>
-       <img src="/images/java-script.png" alt="JS"/>
-       <img src="/images/python.png" alt="Python"/>
-       <br>
-       <br>
-       <img src="/images/java.png" alt="java"/>
-       <img src="/images/icons8-nodejs-48.png" alt="Node-js"/>
-       <img src="/images/reactJs-icon.png" alt="reactJs-icon"/>
-       <img src="/images/mongodb-icon.png" alt="mongodb-icon"/>
-    </div>
+        <section class="Skills">
+        <div class="swiffy-slider">
+          <h2>Skills</h2>
+          <ul class="slider-container">
+              <li><img src="images/html.png" style="width: 350px;height: 300px;">
+              <img src="images/CSS-logo.png" style="width: 350px;height: 300px;">
+              <img src="images/java-script.png" style="width: 350px;height: 300px;"></li>
+
+              <li><img src="images/java.png" style="width: 350px;height: 300px;">
+                <img src="images/python.png" style="width: 350px;height: 300px;">
+                <img src="images/icons8-nodejs-48.png" style="width: 350px;height: 300px;"></li>
+
+                <li><img src="images/mongodb-icon.png" style="width: 350px;height: 300px;">
+                  <img src="images/reactJs-icon.png" style="width: 350px;height: 300px;">
+                  <img src="images/CSS-logo.png" style="width: 350px;height: 300px;"></li>
+          </ul>
+          <button type="button" class="slider-nav"></button>
+          <button type="button" class="slider-nav slider-nav-next"></button>
+      
+          <div class="slider-indicators">
+              <button class="active"></button>
+              <button></button>
+              <button></button>
+          </div>
+      </div>
     </section>
 
     <section id="project">
