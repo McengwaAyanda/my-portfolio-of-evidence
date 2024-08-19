@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <title>Home</title>
 </head>
 <body>
@@ -52,33 +50,49 @@
                 </div>
             </div>
         </div>
+        <!-- Skills section -->
+        <section id="skills" class="skills">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'all')" id="defaultOpen">All Skills</button>
+          <button class="tablinks" onclick="openCity(event, 'frontend')">Frontend Skills</button>
+          <button class="tablinks" onclick="openCity(event, 'backend')">Backend Skills</button>
+          <button class="tablinks" onclick="openCity(event, 'Databases')">Databases</button>
+        </div>
+        <div id="all" class="tabcontent">
+          <img src="/images/html.png" alt="">
+          <img src="/images/CSS-logo.png" alt="">
+          <img src="/images/java-script.png" alt="">
+          <img src="/images/reactJs-icon.png" alt="">
+          <img src="/images/icons8-nodejs-48.png" alt="">
+          <img src="/images/python.png" alt="">
+          <img src="/images/java.png" alt="">
+          <img src="/images/android.png" alt="">
+          <img src="/images/mysql.png" alt="">
+          <img src="/images/postgre.png" alt="">
+          <img src="/images/mongodb-icon.png" alt="">
+          <img src="/images/database.png" alt="">
+        </div>
         
-        <section class="Skills">
-        <div class="swiffy-slider">
-          <h2>Skills</h2>
-          <ul class="slider-container">
-              <li><img src="images/html.png" style="width: 350px;height: 300px;">
-              <img src="images/CSS-logo.png" style="width: 350px;height: 300px;">
-              <img src="images/java-script.png" style="width: 350px;height: 300px;"></li>
-
-              <li><img src="images/java.png" style="width: 350px;height: 300px;">
-                <img src="images/python.png" style="width: 350px;height: 300px;">
-                <img src="images/icons8-nodejs-48.png" style="width: 350px;height: 300px;"></li>
-
-                <li><img src="images/mongodb-icon.png" style="width: 350px;height: 300px;">
-                  <img src="images/reactJs-icon.png" style="width: 350px;height: 300px;">
-                  <img src="images/CSS-logo.png" style="width: 350px;height: 300px;"></li>
-          </ul>
-          <button type="button" class="slider-nav"></button>
-          <button type="button" class="slider-nav slider-nav-next"></button>
-      
-          <div class="slider-indicators">
-              <button class="active"></button>
-              <button></button>
-              <button></button>
-          </div>
-      </div>
-    </section>
+        <div id="frontend" class="tabcontent">
+          <img src="/images/html.png" alt="">
+          <img src="/images/CSS-logo.png" alt="">
+          <img src="/images/java-script.png" alt="">
+          <img src="/images/reactJs-icon.png" alt="">
+        </div>
+        
+        <div id="backend" class="tabcontent">
+          <img src="/images/java.png" alt="">
+          <img src="/images/python.png" alt="">
+          <img src="/images/icons8-nodejs-48.png" alt="">
+          <img src="/images/android.png" alt="">
+        </div>
+        <div id="Databases" class="tabcontent">
+          <img src="/images/mongodb-icon.png" alt="">
+          <img src="/images/postgre.png" alt="">
+          <img src="/images/database.png" alt="">
+          <img src="/images/mysql.png" alt="">
+        </div>
+      </section>
 
     <section id="project">
       <h1>My Projects</h1><br>
@@ -160,46 +174,55 @@
           </div>
     </section>
 
-    <section id="contact">
-      <div class="contact-container">
-        <div class="contact-info">
+    <section id="container" class="container">
+        <!-- <div class="contact-info">
           <h1>Contact Information</h1>
           <p><i class='bx bxs-map'></i>08 Nowanga Street, Khayelitsha, Cape Town, SA</p>
           <p><i class='bx bxs-phone'></i>(+27) 60 368 7586</p>
           <p><img src=""><i class='bx bxs-envelope'></i>loadingmcengwa@gmail.com</p>
-        </div>
-        <div class="form-card2">
-          <form class="form" method="post" action="https://formsubmit.co/loadingmcengwa@gmail.com">
-            <h1 class="form-heading">Get In Touch</h1>
-            <input type="hidden" name="_captcha" value="false">
-            
-            <div class="form-field">
-              <input required placeholder="Name" class="input-field" type="text" name="name" />
-            </div>
-    
-            <div class="form-field">
-              <input required placeholder="Email" class="input-field" type="email" name="email" />
-            </div>
-
-            <div class="form-field">
-              <input required placeholder="Subject" class="input-field" type="text" name="subject" />
-            </div>
-    
-            <div class="form-field">
-              <textarea
-                required
-                placeholder="Message"
-                cols="30"
-                rows="3"
-                class="input-field"
-                name="message"
-              ></textarea>
-            </div>
-    
-            <input type="submit" value="Send Message" class="sendMessage-btn" />
+        </div> -->
+          <div class="text">
+             Contact us Form
+          </div>
+          <form action="#">
+             <div class="form-row">
+                <div class="input-data">
+                   <input type="text" required>
+                   <div class="underline"></div>
+                   <label for="">First Name</label>
+                </div>
+                <div class="input-data">
+                   <input type="text" required>
+                   <div class="underline"></div>
+                   <label for="">Last Name</label>
+                </div>
+             </div>
+             <div class="form-row">
+                <div class="input-data">
+                   <input type="text" required>
+                   <div class="underline"></div>
+                   <label for="">Email Address</label>
+                </div>
+                <div class="input-data">
+                   <input type="text" required>
+                   <div class="underline"></div>
+                   <label for="">Cellphone no.:</label>
+                </div>
+             </div>
+             <div class="form-row">
+             <div class="input-data textarea">
+                <textarea rows="8" cols="80" required></textarea>
+                <br />
+                <div class="underline"></div>
+                <label for="">Write your message</label>
+                <br />
+                <div class="form-row submit-btn">
+                   <div class="input-data">
+                      <div class="inner"></div>
+                      <input type="submit" value="submit">
+                   </div>
+                </div>
           </form>
-        </div>
-      </div>
     </section>
     <button id="scrollToTop" class="scroll-to-top">
       <i class='bx bxs-up-arrow'></i>

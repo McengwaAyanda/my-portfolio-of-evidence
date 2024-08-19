@@ -49,38 +49,19 @@ scrollToTopBtn.addEventListener("click", () => {
   });
 });
 
-const carouselSlide = document.querySelector('.carousel-slide');
-const carouselImage = document.querySelectorAll('.carousel-slide img');
-// buttons
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
-//counter
-let counter = 1;
-const size = carouselImage[0].clientWidth;
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 
-carouselSlide.style.transform = 'translate X(' + (-size * counter) + 'px)';
-// Button listeners
-nextBtn.addEventListener('click', () => {
-  if (counter >= carouselImage.length - 1) return;
-  carouselSlide.style.transition = "transform 0,45 ease-in-out";
-  counter++;
-  carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px';
-});
-prevBtn.addEventListener('click', () => {
-  if (counter <= 0) return
-  carouselSlide.style.transition = "transform 0,45 ease-in-out";
-  counter--;
-  carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px';
-});
-carouselSlide.addEventListener('transitioned', () => {
-  if (carouselImage[counter].id === 'lastclone') {
-    carouselSlide.style.transition = "none";
-    counter = carouselImage.length - 2;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px';
-  }
-  if (carouselImage[counter].id === 'firstclone') {
-    carouselSlide.style.transition = "none";
-    counter = carouselImage.length - counter;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px';
-  }
-});
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
