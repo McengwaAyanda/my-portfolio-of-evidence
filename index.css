@@ -10,13 +10,13 @@
 #navbar {
   position: absolute;
   top: 10px;
-  width: 90%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
   align-items: center;
   padding: 10px;
-  margin: 5px;
+  margin: 0 5px 0 10px;
   background-color: rgb(255, 234, 164);
   color: #333;
   z-index: 100;
@@ -62,7 +62,7 @@
   display: block;
   width: 25px;
   height: 3px;
-  margin: 5px auto;
+  margin: 5px 15px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #333;
@@ -107,8 +107,12 @@
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  
 }
+
 .row {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,7 +214,7 @@
   }
 
   .about-col-1 img {
-    margin: 4rem;
+    margin: 2.5rem 1.5rem;
   }
 
   .about-col-2 {
@@ -256,6 +260,7 @@
   border-radius: 20px;
   animation: fadeIn 0.5s ease-in forwards;
   align-items: center;
+  box-shadow: 5px 7px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Style the buttons inside the tab */
@@ -291,6 +296,7 @@
   justify-content: center;
   margin: 1rem 2rem;
   animation: fadeIn 0.5s ease-in forwards;
+  box-shadow: 5px 7px 10px 5px rgba(0, 0, 0, 0.5);
 }
 .tabcontent img{
   width: 25%;
@@ -298,6 +304,8 @@
   justify-content: space-evenly;
   margin: 1.5rem 1rem 1rem 3rem;
   transition: transform 0.3s ease-in-out;
+  
+
 }
 
 .tabcontent img:hover {
@@ -464,6 +472,8 @@
   padding: 20px 20px;
   animation: fadeIn 0.5s ease-in forwards;
   justify-content: center;
+  border: 2px solid #333;
+  box-shadow: 5px 7px 10px 5px rgba(0, 0, 0, 0.5);
 }
 .timeline-container h1 {
   text-align: center;
@@ -497,19 +507,20 @@
 .timeline-item::before {
   content: '';
   position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: #333;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #333;
   border-radius: 50%;
   left: 10px;
-  top: 15px;
+  margin: 0 0 0 5px;
   z-index: 1;
 }
 
 .timeline-date {
-  width: 150px;
-  text-align: left;
-  padding-right: 20px;
+  width: 250px;
+  text-align: right;
+  padding-right: 5px;
   font-size: 14px;
   font-weight: bold;
   background-color: rgb(255, 234, 164);
@@ -517,6 +528,7 @@
   border: 2px solid #333;
   border-radius: 5px;
   padding: 5px;
+  line-height: 1.5rem;
 
 }
 
@@ -737,6 +749,7 @@ form .form-row .textarea{
   width: 100%;
   text-align: center;
   display: block;
+  box-shadow: 5px 7px 10px 5px rgba(0, 0, 0, 0.5);
 }
 .contact-info a i{
   border: 2px solid #333;
