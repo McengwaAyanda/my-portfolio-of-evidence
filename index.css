@@ -5,6 +5,7 @@
   color: #333;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 
 #navbar {
@@ -254,13 +255,12 @@
 /* Style the tab */
 .tab {
   overflow: hidden;
-  width: 80%;
-  margin: 2rem .5rem .5rem 10rem;
+  width: 40%;
+  margin: 2rem .5rem .5rem 30rem;
   justify-content: space-evenly;
   border-radius: 20px;
   animation: fadeIn 0.5s ease-in forwards;
   align-items: center;
-  box-shadow: 5px 7px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Style the buttons inside the tab */
@@ -292,17 +292,18 @@
   display: flex;
   flex-wrap: wrap;
   padding: 6px 12px;
-  width: 90%;
-  justify-content: center;
-  margin: 1rem 2rem;
+  width: 80%;
+  height: auto;
+  justify-content: space-between;
+  margin: 1rem 1rem 1rem 5rem ;
   animation: fadeIn 0.5s ease-in forwards;
   box-shadow: 5px 7px 10px 5px rgba(0, 0, 0, 0.5);
 }
 .tabcontent img{
-  width: 25%;
+  width: 17%;
   height: 5rem;
   justify-content: space-evenly;
-  margin: 1.5rem 1rem 1rem 3rem;
+  margin: 1.5rem .5rem 1rem 5rem;
   transition: transform 0.3s ease-in-out;
   
 
@@ -316,7 +317,7 @@
 @media (max-width: 768px) {
   .tab {
     width: 100%;
-    margin: 2rem 1.5rem;
+    margin: 2rem 2rem;
   }
 
   .tabcontent {
@@ -472,8 +473,6 @@
   padding: 20px 20px;
   animation: fadeIn 0.5s ease-in forwards;
   justify-content: center;
-  border: 2px solid #333;
-  box-shadow: 5px 7px 10px 5px rgba(0, 0, 0, 0.5);
 }
 .timeline-container h1 {
   text-align: center;
@@ -579,7 +578,7 @@
 .scroll-to-top {
   display: none;
   position: fixed;
-  right: 3px;
+  right: 20px;
   bottom: 5px;
   width: 40px;
   height: 40px;
@@ -613,8 +612,7 @@
   animation: fadeIn 0.5s ease-in forwards;
   border-radius: 10px;
   padding: 5px 5px 5px 20px;
-  margin: .5rem .5rem .5rem 1.5rem;
-  box-shadow: 5px 7px 10px 5px rgba(0, 0, 0, 0.5);
+  margin: .5rem .5rem 1.5rem 3rem;
 }
 .container .text{
   text-align: center;
@@ -642,7 +640,7 @@ form .form-row .input-data{
   position: relative;
 }
 form .form-row .textarea{
-  height: 70px;
+  height: 50px;
 }
 .input-data input,
 .textarea textarea{
@@ -660,19 +658,19 @@ form .form-row .textarea{
   color: #333;
 }
 .textarea textarea{
-  resize: none;
+  resize: both;
 
 }
 .input-data label{
   position: absolute;
-  pointer-events: none;
-  bottom: 10px;
+  pointer-events: nones;
+  bottom: 20px;
   font-size: 16px;
   transition: all 0.3s ease;
 }
 .textarea label{
   width: 100%;
-  bottom: 40px;
+  bottom: 10px;
 
 }
 .input-data .underline{
@@ -702,6 +700,7 @@ form .form-row .textarea{
   height: 45px!important;
   width: 25%!important;
 }
+
 .submit-btn .input-data .inner{
   height: 100%;
   width: 300%;
@@ -711,9 +710,6 @@ form .form-row .textarea{
   color: #333;
   transition: all 0.4s;
   border: 2px solid #333;
-}
-.submit-btn .input-data:hover .inner{
-  left: 0;
 }
 .submit-btn .input-data input{
   background: none;
@@ -726,6 +722,7 @@ form .form-row .textarea{
   cursor: pointer;
   position: relative;
   z-index: 2;
+  
 }
 @media (max-width: 768px) {
   .container .text{
